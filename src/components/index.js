@@ -192,7 +192,7 @@ const Rifa = () => {
                         Você pode pagar com PIX copiando esse email ou lendo o QR Code abaixo:
                     </Typography>
                     <Typography variant="body1" component="p">
-                        PIX: euclides.silva@accurate.com.br
+                        PIX: euclides.silva@accurate.com.br ou euclideslione@gmail.com
                     </Typography>
                     <img src={qrCodeImage} alt="Imagem" style={{ width: '100%', marginTop: '10px' }} />
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', marginTop: 2 }}>
