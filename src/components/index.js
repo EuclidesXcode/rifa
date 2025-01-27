@@ -116,9 +116,9 @@ const Rifa = () => {
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            border: selectedNumbers.includes(item.number) || item.isSelected ? '1px solid green' : '1px solid red',
+                            border: selectedNumbers.includes(item.number) || item.isSelected ? '1px solid red' : '1px solid green',
                             borderRadius: '4px',
-                            color: selectedNumbers.includes(item.number) || item.isSelected ? 'green' : 'red',
+                            color: selectedNumbers.includes(item.number) || item.isSelected ? 'red' : 'green',
                             cursor: item.isSelected ? 'not-allowed' : 'pointer',
                         }}
                         onClick={() => !item.isSelected && handleSelectNumber(item.number)}
