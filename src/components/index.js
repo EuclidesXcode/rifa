@@ -3,7 +3,6 @@ import { Box, Typography, Button, Modal, TextField } from '@mui/material';
 import { database } from '../services/firebaseConfig';
 import { ref, get, child, update } from 'firebase/database';
 import qrCodeImage from '../assets/qr-code.jpeg';
-import InputMask from 'react-input-mask';
 
 const Rifa = () => {
     const [numbers, setNumbers] = useState([]);
@@ -132,7 +131,20 @@ const Rifa = () => {
                 Comprar
             </Button>
             <Modal open={open} onClose={handleClose}>
-                <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 400, bgcolor: 'background.paper', border: '2px solid #000', boxShadow: 24, p: 4 }}>
+                <Box sx={{ 
+                    position: 'absolute', 
+                    top: '50%', 
+                    left: '50%', 
+                    transform: 'translate(-50%, -50%)', 
+                    width: '90%', 
+                    maxWidth: 400, 
+                    bgcolor: 'background.paper', 
+                    border: '2px solid #000', 
+                    boxShadow: 24, 
+                    p: 4,
+                    maxHeight: '90vh',
+                    overflowY: 'auto'
+                }}>
                     <Typography variant="h6" component="h2">
                         Confirmar Compra
                     </Typography>
